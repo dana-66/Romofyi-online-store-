@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/07b0dc8979.js" crossorigin="anonymous"></script>
+    <!-- <link rel="javascript" href="js.js"> -->
     <title>Romofyi Store</title>
 </head>
 
@@ -22,10 +23,14 @@
             <!-- social meadia acounts -->
             <div class="social-media">
                 <!-- <a class="social-links" href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a> -->
-                <a class="social-links" href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                <a class="social-links" href="#" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-                <a class="social-links" href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a class="social-links" href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a class="social-links" href="#"><img class="icon-color"
+                        src="https://img.icons8.com/ios-glyphs/30/000000/facebook-circled--v1.png" /></a>
+                <a class="social-links" href="#" target="_blank"><img
+                        src="https://img.icons8.com/ios-glyphs/30/000000/twitter-circled--v1.png" /></a>
+                <a class="social-links" href="#" target="_blank"><img
+                        src="https://img.icons8.com/ios-glyphs/30/000000/linkedin-circled--v1.png" /></a>
+                <a class="social-links" href="#" target="_blank"><img
+                        src="https://img.icons8.com/ios-glyphs/30/000000/instagram-circle.png" /></a>
             </div>
             <!-- end of social meadia acoutns -->
 
@@ -59,13 +64,7 @@
 
             <!-- bag + btn -->
             <div class="btnandbag">
-                <span><a href="shopping-bag.html" target="_blank"><i
-                            class="fa-solid fa-bag-shopping icons"></i></a></span>
-                <!-- this div will only show when u hover over the bag icon -->
-                <div class="shop-bag-hov">
-                    <h1> Homeie u broke <i class="fa-regular fa-face-grin-tongue-squint"></i></h1>
-                </div>
-
+                <a href="shopping-bag.html" target="_blank"><i class="fa-solid fa-bag-shopping icons"></i></a>
                 <a href="#" target="_blank"><button class="btn-order-now">Order Now</button></a>
             </div>
         </nav>
@@ -74,20 +73,37 @@
         <!-- navagation bar (home about etc + search bar ) -->
         <nav class="nav-bar">
             <!-- nav links -->
-            <div>
-                <a id="home-yellow" href="#home">Home</a>
-                <a class="nav-links" href="#about">About</a>
-                <a class="nav-links" href="#products">Products</a>
-                <a class="nav-links" href="#fashion">fashion</a>
-                <a class="nav-links" href="#news">News</a>
-                <a class="nav-links" href="#contact-us">Contact us</a>
-            </div>
+            <ul id="Menuitems">
+                <li><a class="nav-links" href="#home">Home</a></li>
+                <li><a class="nav-links" href="#about">About</a></li>
+                <li><a class="nav-links" href="#products">Products</a></li>
+                <li><a class="nav-links" href="#fashion">fashion</a></li>
+                <li><a class="nav-links" href="#news">News</a></li>
+                <li><a class="nav-links" href="#contact-us">Contact us</a></li>
+            </ul>
+            <!-- <a href="#"><img src="images/menu_icon.png" class="menu-icon"></a> -->
             <!-- search bar -->
             <div class="search-and-icon">
-
                 <input id="searchBar" name="searchBar" type="search" placeholder="search">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
             </div>
+            <!-- a  search icon that shows up when in mobile -->
+            <!-- <a href="#"><i class="fa-solid fa-magnifying-glass search-icon search-icon"></i></a> -->
+            <!-- a menu icon that shows up when you satisfy the required media width  -->
+<!-- 
+            <input type="checkbox" id="burger"/>
+            <label for="burger">
+            <span><i class="fa-solid fa-bars menu-icon"></i></span>
+            </label>
+            <ul id="Menuitems">
+                <li><a class="nav-links" href="#home">Home</a></li>
+                <li><a class="nav-links" href="#about">About</a></li>
+                <li><a class="nav-links" href="#products">Products</a></li>
+                <li><a class="nav-links" href="#fashion">fashion</a></li>
+                <li><a class="nav-links" href="#news">News</a></li>
+                <li><a class="nav-links" href="#contact-us">Contact us</a></li>
+            </ul> -->
+            
         </nav>
         <!-- end of navagation bar -->
     </header>
@@ -109,7 +125,7 @@
         <div class="items">
             <!-- shose -->
             <div class="item-block">
-                <a href="#" target="_blank">
+                <a class="anchor" href="#" target="_blank">
                     <img src="images/shoes.png">
                     <p>SHOES</p>
                 </a>
@@ -117,7 +133,7 @@
             <!-- end of shoes -->
             <!-- underwaer -->
             <div class="item-block">
-                <a href="#" target="_blank">
+                <a class="anchor" href="#" target="_blank">
                     <img src="images/underwear.png">
                     <p>UNDERWEAR</p>
                 </a>
@@ -126,7 +142,7 @@
 
             <!-- pante and socks -->
             <div class="item-block">
-                <a href="#" target="_blank">
+                <a class="anchor" href="#" target="_blank">
                     <img src="images/pent.png">
                     <p>PANTE & SOCKS</p>
                 </a>
@@ -135,7 +151,7 @@
 
             <!-- T-shirts and tank top -->
             <div class="item-block">
-                <a href="#" target="_blank">
+                <a class="anchor" href="#" target="_blank">
                     <img src="images/t_shart.png">
                     <p>T-SHIRTS & TANKSTOP</p>
                 </a>
@@ -144,7 +160,7 @@
 
             <!-- Cardigans and jumpers -->
             <div class="item-block">
-                <a href="#" target="_blank">
+                <a class="anchor" href="#" target="_blank">
                     <img src="images/jakit.png">
                     <p>CARDIGANS & JUMPERS</p>
                 </a>
@@ -152,7 +168,7 @@
             <!-- end of Cardigans and jumpers -->
             <!-- Top & HAt  -->
             <div class="item-block">
-                <a href="#" target="_blank">
+                <a class="anchor" href="#" target="_blank">
                     <img src="images/helbet.png">
                     <p>TOP & HAT</p>
                 </a>
@@ -175,7 +191,8 @@
                     <figure class="product-img">
                         <img src="images/shoes1.png">
                     </figure>
-                    <p>Short Openwork Cardigans<br> $120.0</p>
+                    <p>Short Openwork Cardigans</p>
+                    <p>$120.0</p>
                 </a>
             </div>
             <!-- end of shoe 1 -->
@@ -186,7 +203,8 @@
                     <figure class="product-img">
                         <img src="images/shoes2.png">
                     </figure>
-                    <p>Short Openwork Cardigans<br> $120.0</p>
+                    <p>Short Openwork Cardigans</p>
+                    <p>$120.0</p>
                 </a>
             </div>
             <!-- end of shoe 2 -->
@@ -197,7 +215,8 @@
                     <figure class="product-img">
                         <img src="images/shoes3.png">
                     </figure>
-                    <p>Short Openwork Cardigans<br> $120.0</p>
+                    <p>Short Openwork Cardigans</p>
+                    <p>$120.0</p>
                 </a>
             </div>
             <!-- end of shoe 3 -->
@@ -208,7 +227,8 @@
                     <figure class="product-img">
                         <img src="images/shoes4.png">
                     </figure>
-                    <p>Short Openwork Cardigans<br> $120.0</p>
+                    <p>Short Openwork Cardigans</p>
+                    <p>$120.0</p>
                 </a>
             </div>
             <!-- end of shoe 4 -->
@@ -219,7 +239,8 @@
                     <figure class="product-img">
                         <img src="images/shoes5.png">
                     </figure>
-                    <p>Short Openwork Cardigans<br> $120.0</p>
+                    <p>Short Openwork Cardigans</p>
+                    <p>$120.0</p>
                 </a>
             </div>
             <!-- end of shoe 5 -->
@@ -355,7 +376,7 @@
 
     <!-- start of collection section -->
     <section id="fashion" class="fashion-section">
-        <a href="#" target="_blank"> <img src="images/fashion.jpg"></a>
+        <a href="#" target="_blank"> <img class="fashion-img" src="images/fashion.jpg"></a>
     </section>
     <!-- end of collection section -->
 
@@ -382,9 +403,9 @@
                         <p class="news-like">Like <span class="news-comment"> Comment</span></p>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                    Stuscipit dolorum quas doloribus nostrum soluta exercita<br>
-                    ttiondem aliquid tempore, ex numquam tempora? goodbye my <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Stuscipit dolorum quas doloribus nostrum soluta exercita
+                    ttiondem aliquid tempore, ex numquam tempora? goodbye my
                     love, oh you Music for a sushi resturant.</p>
                 <!-- end of paragraph div -->
             </div>
@@ -409,9 +430,9 @@
                         <p class="news-like">Like <span class="news-comment"> Comment</span></p>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                    Stuscipit dolorum quas doloribus nostrum soluta exercita<br>
-                    ttiondem aliquid tempore, ex numquam tempora? goodbye my <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Stuscipit dolorum quas doloribus nostrum soluta exercita
+                    ttiondem aliquid tempore, ex numquam tempora? goodbye my
                     love, oh you Music for a sushi resturant.</p>
                 <!-- end of paragraph div -->
             </div>
@@ -436,9 +457,9 @@
                         <p class="news-like">Like <span class="news-comment"> Comment</span></p>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                    Stuscipit dolorum quas doloribus nostrum soluta exercita<br>
-                    ttiondem aliquid tempore, ex numquam tempora? goodbye my <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Stuscipit dolorum quas doloribus nostrum soluta exercita
+                    ttiondem aliquid tempore, ex numquam tempora? goodbye my
                     love, oh you Music for a sushi resturant.</p>
                 <!-- end of paragraph div -->
             </div>
@@ -450,7 +471,7 @@
             <h2 class="form-headding">Subscribe To The Newsletter</h2>
             <div>
                 <input name="email" id="email" type="email" placeholder="Enter your email" required>
-                <button id="sub-btn" >Subscribe</button>
+                <button id="sub-btn">Subscribe</button>
             </div>
         </form>
         <!-- end of form  -->
@@ -459,33 +480,41 @@
 
     <!-- the contacts section in da end -->
     <section id="contact-us">
-        <div class="prop-alignment">
-            <div ><a href="#" target="_blank" class="propertes"><img class="properties-img" src="images/icon_car.png">
-                Free Shipping
-                </a>
+        <div class="father-for-prop-alignment">
+            <div class="prop-alignment">
+                <div><a href="#" target="_blank" class="propertes"><img class="properties-img"
+                            src="images/icon_car.png">
+                        Free Shipping
+                    </a>
+                </div>
+                <div>
+                    <a href="#" target="_blank" class="propertes"><img class="properties-img"
+                            src="images/icon_gift.png">
+                        Special Gift
+                    </a>
+                </div>
+                <div>
+                    <a href="#" target="_blank" class="propertes"><img class="properties-img"
+                            src="images/icon_mony.png">
+                        Money
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="#" target="_blank" class="propertes"><img class="properties-img" src="images/icon_gift.png">
-                Special Gift
-                </a>
-            </div>
-            <div>
-                <a href="#" target="_blank" class="propertes"><img class="properties-img" src="images/icon_mony.png">
-                Money
-                </a>
-            </div>
-                
         </div>
         <div class="grid-container">
             <div>
-                <a href="#" class="footer-links" target="_blank"><h2>INFORMATION</h2></a>
+                <a href="#" class="footer-links" target="_blank">
+                    <h3>INFORMATION</h3>
+                </a>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nobis incidunt eaque quo officiis
                     similique deserunt harum, ullam vitae, laboriosam cumque rerum ea minima, ipsam doloremque aut
                     itaque! Officiis minus laboriosam ex culpa perspiciatis eaque illum dignissimos. Assumenda?</p>
             </div>
 
             <div>
-                <a href="#" class="footer-links" target="_blank"><h2>MY ACCOUNT</h2></a>
+                <a href="#" class="footer-links" target="_blank">
+                    <h3>MY ACCOUNT</h3>
+                </a>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nobis incidunt eaque quo officiis
                     similique deserunt harum, ullam vitae, laboriosam cumque rerum ea minima, ipsam doloremque aut
                     itaque! Officiis minus laboriosam ex culpa perspiciatis eaque illum dignissimos. Assumenda,
@@ -493,7 +522,9 @@
             </div>
 
             <div>
-                <a href="#" class="footer-links" target="_blank"><h2>ABOUT</h2></a>
+                <a href="#" class="footer-links" target="_blank">
+                    <h3>ABOUT</h3>
+                </a>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nobis incidunt eaque quo officiis
                     similique deserunt harum, ullam vitae, laboriosam cumque rerum ea minima, ipsam doloremque aut
                     itaque! Officiis minus laboriosam ex culpa perspiciatis eaque illum dignissimos. Assumenda,
@@ -501,7 +532,9 @@
             </div>
 
             <div>
-                <a href="#" class="footer-links" target="_blank"><h2>CONTACTS</h2></a>
+                <a href="#" class="footer-links" target="_blank">
+                    <h3>CONTACTS</h3>
+                </a>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nobis incidunt eaque quo officiis
                     similique deserunt harum, ullam vitae, laboriosam cumque rerum ea minima, ipsam doloremque aut
                     itaque! Officiis minus laboriosam ex culpa perspiciatis eaque illum dignissimos. Assumenda,
@@ -517,6 +550,24 @@
         <p>&copy; 2019 All Rights Reserved. Design by " I Dont Care" Teamplates</p>
     </footer>
     <!-- footer -->
+
+    <!-- this is JS for toggle menu  -->
+<!-- 
+    <script> 
+        var Menuitems = Document.getelementById("Menuitems");
+        Menuitems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (Menuitems.style.maxHeight == "0px") 
+            {
+                Menuitems.style.maxHeight = "200px";
+            }
+            else {
+                Menuitems.style.maxHeight = "0px";
+            }
+        }
+         
+    </script> -->
 </body>
 
 </html>
