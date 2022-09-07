@@ -323,6 +323,7 @@
         column-gap: 70px;
         /* text-align: left; */
         /* margin-top: -120px; */
+        margin-left: 0;
         padding-top: 450px;
     }
 
@@ -800,11 +801,12 @@ date {
 
 .grid-container {
     padding: 250px 50px 100px 50px;
-    display: inline-grid;
+    display: grid;
     grid-template-columns: repeat(4, 250px);
     column-gap: 70px;
     text-align: left;
-    align-content:center;
+    align-content: center;
+    /* margin-top: -120px; */
     justify-content: center;
     /* margin-left: 100px; */
 }
